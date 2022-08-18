@@ -1,0 +1,163 @@
+<html>
+<head>
+<style>
+    body {
+            margin: 0;
+            font-size: 14px;
+            align-items: start;
+            min-height: 100vh;
+           
+        }
+    section{
+      width: 100vw;
+      height: 100vh;
+    }
+    .section-b{
+      display: flex;
+      height: 90vh;
+    }
+   
+   
+    ul.topnav {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(192,192,192,0.8);
+            width: 100%;
+
+        }
+
+        ul.topnav li {
+           
+            display: inline;
+            opacity: 1;
+        }
+
+        ul.topnav li a {
+            display: inline-block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            border-radius: 5px;
+           
+           
+        }
+
+        ul.topnav li a:hover:not(.active) {
+            background-color: rgba(243,233,76,0.5);
+        }
+
+        ul.topnav li a.active {
+            background-color: #f3e94c;
+            color: black;
+        }
+        .header{
+          color: black;
+            text-align: center;
+            height:100vh;
+            background-size: 100% 100%;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+        }
+        .form-bar{
+          opacity: 0.7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+        }
+        h1{
+          font-size: 40px;
+          color: white;
+        }
+      .side-bar{
+      flex: 0.4;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .form-content{
+      display: flex;
+      flex-direction: column;  
+      width: 30%;
+       
+    }
+    input{
+      margin: 5px;
+      height: 40px;
+      border-radius: 10px;
+    }
+    button{
+      font-size: 18px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            border: 3px solid rgb(45, 63, 80);;
+            background-color: #2d3e50;
+            color: white;
+    }
+    button:hover {
+            background-color: rgb(45, 63, 80,0.8);
+            color: black;
+        }
+        @media screen and (max-width: 700px) {
+          .section-b{
+            flex-direction: column;
+          }
+          .side-bar{
+            height: 1000px;
+          }
+          .form-content{
+            width: 70%;
+          }
+           
+
+        }
+  </style>
+
+</head>
+
+<body >
+  <section class="header">
+    <!-- <ul class="topnav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Explore.html">Explore</a></li>
+        <li><a href="#"  class="active">Register</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul> -->
+    <section class='section-b'>
+      <div class="side-bar"style="background-color:  #2d3e50;">
+        <h1>E-shop</h1>
+        <p style="font-size: 20px; color: white;">Your Shopping Home</p>
+      </div>
+
+      <div class='form-bar'>
+        <div class="form-content">
+
+        <p style="font-weight: bolder; font-size: large;">Register Now</p>
+        <input type="text" name="Name" required placeholder="Name" id='Name'>
+        <input type="number" id="Mobile" name="phone" placeholder="Mobile No." pattern="[0-9]{10}" required>
+        <input type="email" id="Email" name="email" required placeholder="Email">
+        <input type="text" name="password" required placeholder="Password" id='password'>
+        <input type="text" name="repassword" placeholder="Confirm Password" required id='repassword'>
+        
+        <button onClick="BtnClick()">Submit</button>
+        <p id="result"></p>
+        <script src="../js/register.js">
+         
+        </script>
+      </div>
+      </div>
+   
+  </section>
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+/* navbar */
+#navbar-color{
+    background-color: #f5b500;
+    height:4rem;
+}
+#navbar-logo i img{
+    width: 30px;
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+#navbar-logo{
+    font-size: 35px;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 1px 5px black;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.nav-link:hover{
+    color: white;
+    text-shadow: 2px 1px 5px black;
+}
+.new-icons{
+    cursor: pointer;
+}
+/* navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar-top{
+    background-color: black;
+    color: white;
+}
+.rsc{
+    display: flex;
+}
+#btn3{
+    width: 100px;
+    height: 36px;
+    background-color: #f5b500;
+    border: none;
+}
+#btn3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.icons{
+    margin-left: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.icons i{
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.product{
+    min-height:24vw;
+    min-width:35vh;
+    border:2px solid rgb(196, 181, 181);
+    box-shadow:#fff ;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin:2vw 2vw;
+}
+img{
+    height:12rem;
+    width:100%;
+}
+button{
+    background-color: yellow;
+    border-radius: 2px;
+    border:1px solid yellow;
+    height:25px;
+    color:black;
+    font-size: small;
+}
+button:hover{
+    background-color: rgb(235, 235, 34);
+}
